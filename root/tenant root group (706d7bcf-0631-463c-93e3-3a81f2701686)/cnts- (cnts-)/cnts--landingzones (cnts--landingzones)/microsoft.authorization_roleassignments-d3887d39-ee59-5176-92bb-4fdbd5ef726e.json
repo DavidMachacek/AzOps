@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "name": "d3887d39-ee59-5176-92bb-4fdbd5ef726e",
+      "apiVersion": "2022-04-01",
+      "properties": {
+        "DisplayName": "Deploy-VM-Backup",
+        "ObjectType": "ServicePrincipal",
+        "PrincipalId": "841b3931-88fa-44e1-ad45-d2e7dd14539e",
+        "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+        "RoleDefinitionName": "Owner"
+      }
+    }
+  ],
+  "outputs": {}
+}
