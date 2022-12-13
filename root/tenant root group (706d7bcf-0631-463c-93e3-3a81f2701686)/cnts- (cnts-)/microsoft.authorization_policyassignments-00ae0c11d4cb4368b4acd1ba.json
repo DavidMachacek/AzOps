@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "00ae0c11d4cb4368b4acd1ba",
+      "apiVersion": "2022-06-01",
+      "location": null,
+      "properties": {
+        "Description": null,
+        "DisplayName": "Limit allowed vm sizes for Azure Machine Learning compute clusters and compute instances",
+        "EnforcementMode": "Default",
+        "NonComplianceMessages": [],
+        "NotScopes": [],
+        "Parameters": {},
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/cnts-/providers/Microsoft.Authorization/policyDefinitions/Deny-MachineLearning-Compute-VmSize",
+        "Scope": "/providers/Microsoft.Management/managementGroups/cnts-"
+      }
+    }
+  ],
+  "outputs": {}
+}

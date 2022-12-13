@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Enable-DDoS-VNET",
+      "apiVersion": "2022-06-01",
+      "location": "westeurope",
+      "identity": {
+        "PrincipalId": "6aeb8a9c-ac39-41ed-a371-37d9e6a2cbdb",
+        "TenantId": "706d7bcf-0631-463c-93e3-3a81f2701686",
+        "Type": "SystemAssigned"
+      },
+      "properties": {
+        "Description": "Protect your virtual networks against volumetric and protocol attacks with Azure DDoS Network Protection. For more information, visit https://aka.ms/ddosprotectiondocs.",
+        "DisplayName": "Virtual networks should be protected by Azure DDoS Network Protection",
+        "EnforcementMode": "Default",
+        "NonComplianceMessages": null,
+        "NotScopes": null,
+        "Parameters": {
+          "ddosPlan": {
+            "value": "/subscriptions/b5ca8cd3-2f7e-4b1b-be1d-28b28c80d452/resourceGroups/cnts--ddos/providers/Microsoft.Network/ddosProtectionPlans/cnts--ddos-westeurope"
+          },
+          "effect": {
+            "value": "Modify"
+          }
+        },
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/94de2ad3-e0c1-4caf-ad78-5d47bbc83d3d",
+        "Scope": "/providers/Microsoft.Management/managementGroups/cnts--connectivity"
+      }
+    }
+  ],
+  "outputs": {}
+}

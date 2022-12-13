@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "name": "7121e48e-64cf-4b78-88e8-8e7f84a090ea",
+      "apiVersion": "2022-04-01",
+      "properties": {
+        "DisplayName": "David Macháček",
+        "ObjectType": "User",
+        "PrincipalId": "d22b7a62-626e-420a-a687-c0eb35512f7d",
+        "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/cdda3590-29a3-44f6-95f2-9f980659eb04",
+        "RoleDefinitionName": "AcrQuarantineReader"
+      }
+    }
+  ],
+  "outputs": {}
+}
