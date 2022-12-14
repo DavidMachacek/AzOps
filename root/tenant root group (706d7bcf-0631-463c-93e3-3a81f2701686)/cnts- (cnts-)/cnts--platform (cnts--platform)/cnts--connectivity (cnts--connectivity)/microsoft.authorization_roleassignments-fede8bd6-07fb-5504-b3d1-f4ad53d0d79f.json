@@ -14,8 +14,8 @@
       "name": "fede8bd6-07fb-5504-b3d1-f4ad53d0d79f",
       "apiVersion": "2022-04-01",
       "properties": {
-        "DisplayName": "Enable-DDoS-VNET",
-        "ObjectType": "ServicePrincipal",
+        "DisplayName": null,
+        "ObjectType": "Unknown",
         "PrincipalId": "6aeb8a9c-ac39-41ed-a371-37d9e6a2cbdb",
         "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/4d97b98b-1d4f-4787-a291-c67834d212e7",
         "RoleDefinitionName": "Network Contributor"
